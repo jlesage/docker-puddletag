@@ -1,0 +1,46 @@
+---
+
+#
+# Definitions for puddletag docker container.
+#
+# This file is used as data source to generate README.md and unRAID template files
+# from Jinja2 templates.
+#
+
+app:
+  id: 42
+  name: puddletag
+  friendly_name: puddletag
+  gui_type: x11
+  base_os: alpine
+  project:
+    description: |-
+      {{ app.friendly_name }} is an audio tag editor for GNU/Linux, similar to the
+      Windows program Mp3tag. Unlike most taggers for GNU/Linux, it uses a
+      spreadsheet-like layout, making all the tags you want to edit by hand visible
+      and easily editable.
+    url: https://docs.puddletag.net/index.html
+  unraid:
+    #support_url: https://forums.unraid.net/topic/XXXXX-support-puddletag/
+    category: "MediaApp:Music Tools:"
+  documentation:
+  changelog:
+    - version: 26.03.1
+      date: 2026-03-15
+      changes:
+        - 'Initial release.'
+
+container:
+  storage_permissions: rw
+
+  # Environment variables.
+  environment_variables: []
+
+  # Volumes
+  volumes: []
+
+  # Network ports
+  ports: []
+
+  # Devices
+  devices: []
