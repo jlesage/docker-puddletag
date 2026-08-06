@@ -14,7 +14,7 @@ ARG PUDDLETAG_VERSION=2.5.0
 ARG PUDDLETAG_URL=https://github.com/puddletag/puddletag/archive/refs/tags/${PUDDLETAG_VERSION}.tar.gz
 
 # Pull base image.
-FROM jlesage/baseimage-gui:alpine-3.23-v4.12.6
+FROM jlesage/baseimage-gui:alpine-3.23-v4.13.0
 
 # Define working directory.
 WORKDIR /tmp
